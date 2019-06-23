@@ -23,7 +23,6 @@ class DetailService extends Component {
         let name = this.props.location.state.id;
         let api = URL + 'users/' + name;
         axios.get(api).then((res) => {
-            console.log(res)
             this.setState({
                 userName: res.data.name,
                 login: res.data.login,
@@ -35,7 +34,6 @@ class DetailService extends Component {
             })
             api = api + '/repos';
             axios.get(api).then((res) => {
-                console.log(res)
                 this.setState({
                     repos: res.data,
                     showData: true

@@ -16,6 +16,7 @@ class UserDetail extends Component {
                             <img
                                 style={{ height: '150px', width: '150px' }}
                                 src={avatar}
+                                alt={login}
                                 className="responsive-img" />
                         </div>
                         <div className="col s12 m10">
@@ -46,14 +47,14 @@ class UserDetail extends Component {
                     <h5 style={{ color: "#546E7A" }}>Pinned Repositories</h5>
                     {repos.map((value, key) => {
                         return (
-                            <div className="col s8 offset-s2 center-align" key={key}>
+                            <div className="col s12 m8 offset-m2 center-align" key={key}>
                                 <div className="card-panel grey lighten-5 z-depth-1">
                                     <div className="valign-wrapper">
-                                        <div className="col s2">
+                                        <div className="col s4 m2">
                                             <img src={avatar} alt="" className="circle responsive-img" />
                                         </div>
-                                        <div className="col s8">
-                                            <h5>{value.name}</h5>
+                                        <div className="col s8 m19">
+                                            <p><strong>{value.name}</strong></p>
                                             <span className="black-text">
                                                 {value.description}
                                             </span>

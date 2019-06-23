@@ -26,9 +26,9 @@ class SearchUser extends Component {
         return (
             <div className="row">
                 <div className="col s12" style={{ backgroundColor: '#ECEFF1', paddingBottom: '30px' }}>
-                    <div className="col s8 offset-s4" >
+                    <div className="col s12 m8 offset-m4" >
                         <h3>GitHub Profile Viewer</h3>
-                        <div className="col s6">
+                        <div className="col s12 m6">
                             <div className="nav-wrapper" style={{ backgroundColor: '#80DEEA', padding: '10px' }}>
                                 <div className="input-field" >
                                     <input id="search" type="search" onKeyDown={this.key} />
