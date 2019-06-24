@@ -20,7 +20,8 @@ class DetailService extends Component {
     }
     // Fetch requested users details
     componentDidMount() {
-        let name = this.props.location.state.id;
+        const { match: { params } } = this.props;
+        let name = params.id;
         let api = URL + 'users/' + name;
         axios.get(api).then((res) => {
             this.setState({

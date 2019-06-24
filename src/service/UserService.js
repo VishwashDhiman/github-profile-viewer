@@ -122,9 +122,8 @@ class UserService extends Component {
         {this.state.name ?
           <Redirect
             to={{
-              pathname: '/user',
-              state: { id: this.state.name }
-            }}
+              pathname: '/user/' + this.state.name
+              }}
           />
           : null}
         {isLoading &&
